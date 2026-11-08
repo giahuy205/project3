@@ -1,0 +1,44 @@
+# ============================================================
+# ROOT GITIGNORE - Nom Nom Hub (Project 3)
+# ============================================================
+
+# Environment variables & sensitive credentials
+.env
+*.env
+.env.local
+
+# Frontend (Node / Angular)
+node_modules/
+frontend/node_modules/
+.angular/
+frontend/.angular/
+dist/
+frontend/dist/
+.npm/
+
+# Backend (Maven / Java / Spring Boot)
+target/
+backend/target/
+*.class
+*.jar
+*.war
+
+# IDE & Editors
+.idea/
+*.iml
+.vscode/
+*.classpath
+*.project
+*.settings/
+
+# OS Files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs & Temp
+*.log
+logs/
+tmp/
+temp/
+

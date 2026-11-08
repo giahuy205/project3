@@ -1,0 +1,83 @@
+spring:
+  # ==========================================
+  # DATABASE - NEON POSTGRESQL
+  # ==========================================
+  datasource:
+    url: ${DB_URL:jdbc:postgresql://ep-small-art-b3cvlabk-pooler.c-4.ap-southeast-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require}
+    username: ${DB_USERNAME:neondb_owner}
+    password: ${DB_PASSWORD:npg_bcm2ZAfTl1rO}
+    driver-class-name: org.postgresql.Driver
+    hikari:
+      maximum-pool-size: 10
+      minimum-idle: 3
+      idle-timeout: 60000
+      max-lifetime: 1800000
+      connection-timeout: 20000
+      keepalive-time: 30000
+      connection-test-query: SELECT 1
+
+  # ==========================================
+  # JPA / HIBERNATE
+  # ==========================================
+  jpa:
+    hibernate:
+      ddl-auto: update         # Tự động cập nhật bảng/cột mới (status, v.v.), không làm mất dữ liệu
+    show-sql: false
+    properties:
+      hibernate:
+        format_sql: false
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+
+  # ==========================================
+  # FILE UPLOAD (Cho ảnh trước khi đẩy lên Cloudinary)
+  # ==========================================
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 10MB
+
+# ==========================================
+# SERVER
+# ==========================================
+server:
+  port: 8080
+  servlet:
+    context-path: /api
+
+# ==========================================
+# JWT CONFIG
+# ==========================================
+app:
+  jwt:
+    secret: ${JWT_SECRET:restaurant-management-secret-key-hust-do-an-3-2026-must-be-at-least-256-bits}
+    expiration-ms: 86400000          # 24 giờ (milliseconds)
+    refresh-expiration-ms: 604800000 # 7 ngày
+
+  # ==========================================
+  # CLOUDINARY CONFIG (Lưu ảnh món ăn)
+  # ==========================================
+  cloudinary:
+    cloud-name: ${CLOUDINARY_CLOUD_NAME:your-cloud-name}
+    api-key: ${CLOUDINARY_API_KEY:your-api-key}
+    api-secret: ${CLOUDINARY_API_SECRET:your-api-secret}
+
+# ==========================================
+# SWAGGER UI / API DOCS
+# ==========================================
+springdoc:
+  api-docs:
+    path: /api-docs
+  swagger-ui:
+    path: /swagger-ui.html
+    tags-sorter: alpha
+    operations-sorter: method
+
+# ==========================================
+# LOGGING
+# ==========================================
+logging:
+  level:
+    "[com.restaurant]": DEBUG
+    "[org.springframework.security]": INFO
+    "[org.hibernate.SQL]": DEBUG
+

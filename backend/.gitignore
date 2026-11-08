@@ -1,0 +1,29 @@
+# ============================================================
+# GITIGNORE - Bảo vệ thông tin nhạy cảm & Dọn dẹp rác build
+# ============================================================
+
+# File môi trường thực tế (KHÔNG COMMIT LÊN GITHUB)
+.env
+
+# Maven Build Output
+target/
+*.class
+*.jar
+*.war
+
+# IDE Files
+.idea/
+*.iml
+.vscode/
+*.classpath
+*.project
+.settings/
+
+# OS Files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
