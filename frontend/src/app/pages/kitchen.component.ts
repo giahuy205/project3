@@ -1,11 +1,11 @@
-import { Component, OnInit, OnDestroy, HostListener, inject, ChangeDetectorRef } from '@angular/core';
+﻿import { Component, OnInit, OnDestroy, HostListener, inject, ChangeDetectorRef } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
-import { KitchenService } from '../../core/services/kitchen.service';
-import { MenuService } from '../../core/services/menu.service';
-import { AuthService } from '../../core/services/auth.service';
-import { KitchenQueueItem, KitchenStatus, Station, Dish, DishStatus, Category, Role, User } from '../../core/models/restaurant.models';
+import { KitchenService } from '../core/services/kitchen.service';
+import { MenuService } from '../core/services/menu.service';
+import { AuthService } from '../core/services/auth.service';
+import { KitchenQueueItem, KitchenStatus, Station, Dish, DishStatus, Category, Role, User } from '../core/models/restaurant.models';
 
 export interface KdsBatchGroup {
   groupKey: string;

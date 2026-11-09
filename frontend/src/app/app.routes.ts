@@ -1,13 +1,13 @@
 import { Routes } from '@angular/router';
-import { LoginComponent } from './pages/login/login.component';
-import { WaiterComponent } from './pages/waiter/waiter.component';
-import { KitchenComponent } from './pages/kitchen/kitchen.component';
-import { AdminComponent } from './pages/admin/admin.component';
-import { CheckoutComponent } from './pages/checkout/checkout.component';
-import { ReadyItemsComponent } from './pages/ready-items/ready-items.component';
-import { ReservationsComponent } from './pages/reservations/reservations.component';
-import { BookingComponent } from './pages/booking/booking.component';
-import { ProfileComponent } from './pages/profile/profile.component';
+import { LoginComponent } from './pages/login.component';
+import { WaiterComponent } from './pages/waiter.component';
+import { KitchenComponent } from './pages/kitchen.component';
+import { AdminComponent } from './pages/admin.component';
+import { CheckoutComponent } from './pages/checkout.component';
+import { ReadyItemsComponent } from './pages/ready-items.component';
+import { ReservationsComponent } from './pages/reservations.component';
+import { BookingComponent } from './pages/booking.component';
+import { ProfileComponent } from './pages/profile.component';
 import { authGuard } from './core/guards/auth.guard';
 
 export const routes: Routes = [

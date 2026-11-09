@@ -1,13 +1,13 @@
-import { Component, OnInit, OnDestroy, inject, ChangeDetectorRef, NgZone } from '@angular/core';
+﻿import { Component, OnInit, OnDestroy, inject, ChangeDetectorRef, NgZone } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { Router } from '@angular/router';
-import { TableService, AreaWithTables } from '../../core/services/table.service';
-import { MenuService } from '../../core/services/menu.service';
-import { OrderService } from '../../core/services/order.service';
-import { KitchenService } from '../../core/services/kitchen.service';
-import { AuthService } from '../../core/services/auth.service';
-import { Category, DiningTable, Dish, Order, OrderItem, TableStatus, KitchenQueueItem } from '../../core/models/restaurant.models';
+import { TableService, AreaWithTables } from '../core/services/table.service';
+import { MenuService } from '../core/services/menu.service';
+import { OrderService } from '../core/services/order.service';
+import { KitchenService } from '../core/services/kitchen.service';
+import { AuthService } from '../core/services/auth.service';
+import { Category, DiningTable, Dish, Order, OrderItem, TableStatus, KitchenQueueItem } from '../core/models/restaurant.models';
 
 interface CartItem {
   dish: Dish;

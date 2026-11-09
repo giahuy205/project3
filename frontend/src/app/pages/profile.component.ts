@@ -1,9 +1,9 @@
-import { Component, OnInit, inject } from '@angular/core';
+﻿import { Component, OnInit, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { UserService } from '../../core/services/user.service';
-import { AuthService } from '../../core/services/auth.service';
-import { UserResponse, Role } from '../../core/models/restaurant.models';
+import { UserService } from '../core/services/user.service';
+import { AuthService } from '../core/services/auth.service';
+import { UserResponse, Role } from '../core/models/restaurant.models';
 
 @Component({
   selector: 'app-profile',

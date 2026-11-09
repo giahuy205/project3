@@ -1,7 +1,7 @@
-import { Component, OnInit, OnDestroy, inject } from '@angular/core';
+﻿import { Component, OnInit, OnDestroy, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { KitchenService } from '../../core/services/kitchen.service';
-import { KitchenQueueItem } from '../../core/models/restaurant.models';
+import { KitchenService } from '../core/services/kitchen.service';
+import { KitchenQueueItem } from '../core/models/restaurant.models';
 
 @Component({
   selector: 'app-ready-items',

@@ -97,4 +97,3 @@ public class OrderController {
         return ResponseEntity.ok(ApiResponse.ok(orderService.getActiveOrders(branchId)));
     }
 }
-

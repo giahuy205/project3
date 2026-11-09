@@ -1,9 +1,9 @@
-import { Component, OnInit, OnDestroy, HostListener, inject, ChangeDetectorRef } from '@angular/core';
+﻿import { Component, OnInit, OnDestroy, HostListener, inject, ChangeDetectorRef } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Router, RouterModule, NavigationEnd } from '@angular/router';
 import { filter } from 'rxjs/operators';
-import { AuthService } from '../../core/services/auth.service';
-import { Role } from '../../core/models/restaurant.models';
+import { AuthService } from '../core/services/auth.service';
+import { Role } from '../core/models/restaurant.models';
 
 @Component({
   selector: 'app-topbar',

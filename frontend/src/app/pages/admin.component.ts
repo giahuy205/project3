@@ -1,15 +1,15 @@
-import { Component, OnInit, inject, ChangeDetectorRef } from '@angular/core';
+﻿import { Component, OnInit, inject, ChangeDetectorRef } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
 import { forkJoin } from 'rxjs';
-import { MenuService } from '../../core/services/menu.service';
-import { TableService, AreaWithTables } from '../../core/services/table.service';
-import { CustomerService } from '../../core/services/customer.service';
-import { UserService } from '../../core/services/user.service';
-import { AuthService } from '../../core/services/auth.service';
-import { OrderService } from '../../core/services/order.service';
-import { Category, DiningTable, Dish, DishStatus, Customer, TableStatus, UserResponse, Role, Order, OrderItem, KitchenStatus } from '../../core/models/restaurant.models';
+import { MenuService } from '../core/services/menu.service';
+import { TableService, AreaWithTables } from '../core/services/table.service';
+import { CustomerService } from '../core/services/customer.service';
+import { UserService } from '../core/services/user.service';
+import { AuthService } from '../core/services/auth.service';
+import { OrderService } from '../core/services/order.service';
+import { Category, DiningTable, Dish, DishStatus, Customer, TableStatus, UserResponse, Role, Order, OrderItem, KitchenStatus } from '../core/models/restaurant.models';
 
 @Component({
   selector: 'app-admin',

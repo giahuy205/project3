@@ -1,12 +1,12 @@
-import { Component, OnInit, OnDestroy, inject } from '@angular/core';
+﻿import { Component, OnInit, OnDestroy, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Subscription } from 'rxjs';
-import { OrderService } from '../../core/services/order.service';
-import { BillService, BillPreview, BillResponse, PaymentMethod } from '../../core/services/bill.service';
-import { CustomerService } from '../../core/services/customer.service';
-import { Order, Customer, OrderItem, KitchenStatus } from '../../core/models/restaurant.models';
+import { OrderService } from '../core/services/order.service';
+import { BillService, BillPreview, BillResponse, PaymentMethod } from '../core/services/bill.service';
+import { CustomerService } from '../core/services/customer.service';
+import { Order, Customer, OrderItem, KitchenStatus } from '../core/models/restaurant.models';
 
 @Component({
   selector: 'app-checkout',

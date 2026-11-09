@@ -1,8 +1,8 @@
-import { Component, inject } from '@angular/core';
+﻿import { Component, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule, Router } from '@angular/router';
-import { AuthService } from '../../core/services/auth.service';
-import { Role } from '../../core/models/restaurant.models';
+import { AuthService } from '../core/services/auth.service';
+import { Role } from '../core/models/restaurant.models';
 
 interface MenuItem {
   label: string;

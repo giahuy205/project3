@@ -2,8 +2,8 @@ import { Component, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet, Router, NavigationEnd } from '@angular/router';
 import { filter } from 'rxjs/operators';
-import { TopbarComponent } from './components/topbar/topbar.component';
-import { SidebarComponent } from './components/sidebar/sidebar.component';
+import { TopbarComponent } from './components/topbar.component';
+import { SidebarComponent } from './components/sidebar.component';
 import { AuthService } from './core/services/auth.service';
 
 @Component({
